@@ -19,6 +19,30 @@ const tools: Tool[] = [
     name: "Dev Roadmaps",
     url: "https://www.roadmap.sh/",
   },
+  {
+    name: "Free Faces",
+    url: "https://www.freefaces.gallery/serif",
+  },
+  {
+    name: "Lucide Icons",
+    url: "https://lucide.dev/",
+  },
+  {
+    name: "Tailwind Colors",
+    url: "https://uicolors.app/create",
+  },
+  {
+    name: "XY Flow",
+    url: "https://reactflow.dev/",
+  },
+  {
+    name: "Deepseek AI",
+    url: "https://github.com/deepseek-ai",
+  },
+  {
+    name: "React Spreadsheet",
+    url: "https://iddan.github.io/react-spreadsheet/",
+  },
 ];
 
 export default function Toolbox() {
