@@ -7,7 +7,7 @@ import Tag from '../components/tag.astro';
 const allTags = [...new Set(data.flatMap(tool => tool.tags))].sort();
 ---
 
-<div class="container mx-auto mb-8 mt-12">
+<div class="container mx-auto mb-8 mt-6 md:mt-12 px-2">
   <!-- Filter Controls -->
   <div class="mb-6">
     <div class="flex items-center justify-between mb-3">
@@ -35,7 +35,7 @@ const allTags = [...new Set(data.flatMap(tool => tool.tags))].sort();
   </div>
 
   <!-- Tools Grid -->
-  <div class="tools-grid grid grid-cols-5 gap-4" id="tools-grid">
+  <div class="tools-grid grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-4" id="tools-grid">
     {
       data.map((tool) => (
         <div class="tool-item" data-tags={tool.tags.join(',')}>

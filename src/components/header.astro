@@ -3,15 +3,17 @@ import detailedPinColor from '../assets/pin-detailed-color-svg.svg';
 import { GithubIcon } from '@lucide/astro';
 ---
 
-<header class="w-fit mx-auto border border-gray-400 rounded-full px-8 py-2 mb-8 flex gap-12 justify-between font-[gambarino-regular] select-none items-center">
+<header class="w-full md:w-fit mx-auto border border-t-transparent border-r-transparent border-l-transparent border-b-gray-400 md:border-gray-400 md:rounded-full px-2 md:px-8 py-2 mb-8 flex gap-2 md:gap-12 justify-between font-[gambarino-regular] select-none items-center">
   <div class="flex gap-3 items-center">
     <img src={detailedPinColor.src} alt="Dev Toolbox Logo" class="size-10 rotate-10 hover:scale-110 transition" />
   </div>
+
   <!-- Navigation links -->
-  <nav class="flex gap-4 items-center">
-    <a href="#libraries" class="text-gray-300 hover:text-white transition hover:underline">Other Libraries</a>
-    <a href="https://andremov.dev/" target="_blank" class="text-gray-300 hover:text-white transition hover:underline">The Author</a>
+  <nav class="flex gap-4 items-center text-base">
+    <a href="#libraries" class="text-center text-gray-300 hover:text-white transition hover:underline">Other Libraries</a>
+    <a href="https://andremov.dev/" target="_blank" class="text-center text-gray-300 hover:text-white transition hover:underline">The Author</a>
   </nav>
+
   <!-- Social media links -->
   <div class="flex items-center gap-4 h-full">
     <a href="https://github.com/andremov/dev-toolbox" target="_blank" class="text-gray-200 hover:text-gray-300 hover:bg-gray-600 transition bg-gray-800 p-2 rounded-full" >

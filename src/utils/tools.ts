@@ -438,4 +438,4 @@ const data: Tool[] = [
 
 export default data;
 
-export { tagColorMap, Tag, Tool };
+export { tagColorMap, type Tag, type Tool };
