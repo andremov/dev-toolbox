@@ -1,0 +1,31 @@
+---
+import type { Tool } from '../utils/tools.js';
+import Tag from './tag.astro';
+
+const {
+  name,
+  description,
+  preview,
+  link,
+  tags
+} = Astro.props as Tool;
+---
+
+<a class="group h-96 flex flex-col gap-2 rounded-md border border-neutral-800 p-3 cursor-pointer bg-neutral-900/80 hover:bg-neutral-800/80 backdrop-blur-xs hover:backdrop-blur-sm transition hover:scale-105 hover:border-neutral-700" href={link} target="_blank">
+  <img 
+    class="rounded-sm overflow-hidden border border-neutral-800"
+    src={preview}
+  />
+
+  <span class="text-lg font-bold">
+    {name}
+  </span>
+
+  <div class="my-auto text-gray-400 italic text-xs bg-black/40 px-2 py-4 rounded-md group-hover:bg-black/0 flex items-center">{description}</div>
+
+  <div class="flex items-center gap-1 mt-auto">
+    {tags.map((tag) => (
+      <Tag label={tag} />
+    ))}
+  </div>
+</a>

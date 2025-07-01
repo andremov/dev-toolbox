@@ -1,0 +1,106 @@
+---
+import ToolTile from '../components/tool-tile.astro';
+import data from '../utils/tools';
+import Tag from '../components/tag.astro';
+
+// Get all unique tags from the data
+const allTags = [...new Set(data.flatMap(tool => tool.tags))].sort();
+---
+
+<div class="container mx-auto mb-8 mt-12">
+  <!-- Filter Controls -->
+  <div class="mb-6">
+    <div class="flex items-center justify-between mb-3">
+      <h3 class="text-lg font-semibold text-white">Filter by tags:</h3>
+      <span id="tool-count" class="text-sm text-gray-400">
+        Showing {data.length} tools
+      </span>
+    </div>
+    <div class="flex flex-wrap gap-2 mb-4">
+      <button 
+        class="filter-btn ring-2 ring-violet-500 ring-opacity-50 rounded-full py-1 px-3 text-sm border border-neutral-600 bg-neutral-800 text-white hover:bg-neutral-700 transition-colors"
+        data-tag="all"
+      >
+        All
+      </button>
+      {allTags.map((tag) => (
+        <button 
+          class="filter-btn rounded-full py-1 px-3 text-sm border border-neutral-600 bg-neutral-900 text-gray-300 hover:bg-neutral-700 hover:text-white transition-colors"
+          data-tag={tag}
+        >
+          {tag}
+        </button>
+      ))}
+    </div>
+  </div>
+
+  <!-- Tools Grid -->
+  <div class="tools-grid grid grid-cols-5 gap-4" id="tools-grid">
+    {
+      data.map((tool) => (
+        <div class="tool-item" data-tags={tool.tags.join(',')}>
+          <ToolTile {...tool} />
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<script>
+  // Filter functionality
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const toolItems = document.querySelectorAll('.tool-item');
+  const toolCount = document.getElementById('tool-count');
+
+  function updateToolCount(visibleCount: number) {
+    if (toolCount) {
+      toolCount.textContent = `Showing ${visibleCount} tools`;
+    }
+  }
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const selectedTag = btn.getAttribute('data-tag');
+      if (!selectedTag) return;
+      
+      // Update active button
+      filterBtns.forEach(b => b.classList.remove('ring-2', 'ring-violet-500', 'ring-opacity-50', 'bg-neutral-800', 'text-white'));
+      filterBtns.forEach(b => b.classList.add('bg-neutral-900', 'text-gray-300'));
+      
+      btn.classList.add('ring-2', 'ring-violet-500', 'ring-opacity-50', 'bg-neutral-800', 'text-white');
+      btn.classList.remove('bg-neutral-900', 'text-gray-300');
+
+      // Filter tools and count visible items
+      let visibleCount = 0;
+      toolItems.forEach(item => {
+        const itemTags = item.getAttribute('data-tags');
+        const htmlElement = item as HTMLElement;
+        
+        if (selectedTag === 'all' || (itemTags && itemTags.includes(selectedTag))) {
+          htmlElement.style.display = 'block';
+          htmlElement.style.animation = 'fadeIn 0.3s ease-in';
+          visibleCount++;
+        } else {
+          htmlElement.style.display = 'none';
+        }
+      });
+
+      // Update tool count
+      updateToolCount(visibleCount);
+    });
+  });
+</script>
+
+<style>
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

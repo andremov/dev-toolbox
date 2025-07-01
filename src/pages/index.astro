@@ -1,11 +1,23 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Background from '../components/background.astro';
+import Header from '../components/header.astro';
+import GradientTitle from '../components/gradient-title.astro';
+import ToolGridSection from '../sections/tool-grid-section.astro';
+import LibraryGridSection from '../sections/library-grid-section.astro';
+import Footer from '../components/footer.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<Background />
+	<Header />
+
+	<GradientTitle id="tools">The Dev Toolbox</GradientTitle>
+	<ToolGridSection />
+
+	<GradientTitle id="libraries">Other Tool Libraries</GradientTitle>
+
+	<LibraryGridSection />
+
+	<Footer />
 </Layout>

@@ -1,0 +1,19 @@
+---
+import type { Library } from '../utils/libraries.js';
+
+const {
+  name,
+  preview,
+  link,
+} = Astro.props as Library;
+---
+
+<a class="rounded-md border border-neutral-800 p-4 cursor-pointer bg-neutral-800 max-w-3/4" href={link}>
+  <img 
+    class="rounded-sm overflow-hidden border border-neutral-600 mb-2"
+    src={preview}
+  />
+  <span class="text-lg font-bold">
+    {name}
+  </span>
+</a>
