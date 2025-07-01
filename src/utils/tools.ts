@@ -394,6 +394,46 @@ const data: Tool[] = [
     link: "https://github.com/mixmark-io/turndown",
     tags: ["dev", "open-source", "pkg"],
   },
+  {
+    name: "CSS Shadow Palette Generator",
+    preview: "/previews/css-shadow-palette-generator.png",
+    description:
+      "A tool for generating CSS shadow palettes, allowing you to create consistent and visually appealing shadows for your web designs.",
+    link: "https://www.joshwcomeau.com/shadow-palette/",
+    tags: ["dev", "design"],
+  },
+  {
+    name: "CSS Gradient Generator",
+    preview: "/previews/css-gradient-generator.png",
+    description:
+      "A tool for creating and customizing CSS gradients, making it easy to add beautiful gradients to your web designs.",
+    link: "https://www.joshwcomeau.com/gradient-generator/",
+    tags: ["dev", "design"],
+  },
+  {
+    name: "JS Operator Lookup",
+    preview: "/previews/js-operator-lookup.png",
+    description:
+      "A tool for looking up JavaScript operators and learn more about them.",
+    link: "https://www.joshwcomeau.com/operator-lookup/",
+    tags: ["dev", "docs"],
+  },
+  {
+    name: "JS Snippets",
+    preview: "/previews/js-snippets.png",
+    description:
+      "A collection of useful JavaScript snippets for various tasks and functionalities.",
+    link: "https://www.joshwcomeau.com/snippets/",
+    tags: ["dev", "docs"],
+  },
+  {
+    name: "SVG Blob generator",
+    preview: "/previews/svg-blob-generator.png",
+    description:
+      "A tool for generating SVG blobs, allowing you to create unique and visually appealing shapes for your web designs.",
+    link: "https://www.blobmaker.app/",
+    tags: ["dev", "design"],
+  },
 ];
 
 export default data;
