@@ -434,6 +434,22 @@ const data: Tool[] = [
     link: "https://www.blobmaker.app/",
     tags: ["dev", "design"],
   },
+  {
+    name: "Unsplash",
+    preview: "/previews/unsplash.png",
+    description:
+      "A platform for finding and sharing high-quality, free-to-use images for your projects.",
+    link: "https://unsplash.com",
+    tags: ["design"],
+  },
+  {
+    name: "Deck Gallery",
+    preview: "/previews/deck-gallery.png",
+    description:
+      "A collection of beautifully designed decks, slides, keynotes, guidelines, etc.",
+    link: "https://deck.gallery",
+    tags: ["design"],
+  },
 ];
 
 export default data;
