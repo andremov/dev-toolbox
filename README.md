@@ -2,6 +2,8 @@
 
 A beautifully curated collection of developer tools and resources, built with Astro and Tailwind CSS. This project serves as a comprehensive directory of useful development tools, libraries, and resources that every developer should know about.
 
+![Live site preview showing the Dev Toolbox interface](live-site-preview.png)
+
 ## ✨ Features
 
 - **🎯 Curated Collection**: Hand-picked selection of high-quality development tools
