@@ -3,7 +3,7 @@ import detailedPinColor from '../assets/pin-detailed-color-svg.svg';
 import { GithubIcon } from '@lucide/astro';
 ---
 
-<header class="w-full md:w-fit mx-auto border border-t-transparent border-r-transparent border-l-transparent border-b-gray-400 md:border-gray-400 md:rounded-full px-2 md:px-8 py-2 mb-8 flex gap-2 md:gap-12 justify-between font-[gambarino-regular] select-none items-center">
+<header id="main-header" class="sticky top-6 z-50 w-full md:w-fit mx-auto border border-t-transparent border-r-transparent border-l-transparent border-b-gray-400 md:border-gray-400 md:rounded-full px-2 md:px-8 py-2 mb-8 flex gap-2 md:gap-12 justify-between font-[gambarino-regular] select-none items-center transition-all duration-300 ease-in-out backdrop-blur-sm">
   <div class="flex gap-3 items-center">
     <img src={detailedPinColor.src} alt="Dev Toolbox Logo" class="size-10 rotate-10 hover:scale-110 transition" />
   </div>
@@ -16,8 +16,76 @@ import { GithubIcon } from '@lucide/astro';
 
   <!-- Social media links -->
   <div class="flex items-center gap-4 h-full">
-    <a href="https://github.com/andremov/dev-toolbox" target="_blank" class="text-gray-200 hover:text-gray-300 hover:bg-gray-600 transition bg-gray-800 p-2 rounded-full" >
+    <a href="https://github.com/andremov/dev-toolbox" target="_blank" class="text-gray-200 hover:text-gray-300 hover:bg-neutral-600 transition bg-neutral-800 p-2 rounded-full" >
       <GithubIcon class="size-5" />
     </a>
   </div>
 </header>
+
+<script>
+  function initStickyHeader() {
+    const header = document.getElementById('main-header');
+    if (!header) return;
+
+    let lastScrollY = window.scrollY;
+    let isScrolled = false;
+
+    function updateHeaderStyles() {
+      const currentScrollY = window.scrollY;
+      
+      // Check if we've scrolled past a threshold (e.g., 50px)
+      if (currentScrollY > 50) {
+        if (!isScrolled) {
+          isScrolled = true;
+          // Add scrolled styles
+          header?.classList.add('bg-neutral-800', 'shadow-lg', 'shadow-black/20');
+          header?.classList.remove('border-b-gray-400');
+          header?.classList.add('border-b-gray-600');
+          
+          // Reduce padding and size on scroll
+          header?.classList.remove('py-2', 'md:px-8');
+          header?.classList.add('py-1', 'md:px-6');
+        }
+      } else {
+        if (isScrolled) {
+          isScrolled = false;
+          // Remove scrolled styles
+          header?.classList.remove('bg-neutral-800', 'shadow-lg', 'shadow-black/20');
+          header?.classList.add('border-b-gray-400');
+          header?.classList.remove('border-b-gray-600');
+          
+          // Restore original padding and size
+          header?.classList.add('py-2', 'md:px-8');
+          header?.classList.remove('py-1', 'md:px-6');
+        }
+      }
+
+      lastScrollY = currentScrollY;
+    }
+
+    // Throttle scroll events for better performance
+    let ticking = false;
+    function handleScroll() {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          updateHeaderStyles();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }
+
+    // Add scroll listener
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    // Initial check in case page loads with scroll position
+    updateHeaderStyles();
+  }
+
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initStickyHeader);
+  } else {
+    initStickyHeader();
+  }
+</script>
