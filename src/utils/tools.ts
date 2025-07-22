@@ -450,6 +450,14 @@ const data: Tool[] = [
     link: "https://deck.gallery",
     tags: ["design"],
   },
+  {
+    name: "Happy Hues",
+    preview: "/previews/happy-hues.png",
+    description:
+      "A curated collection of color palettes and design inspiration for web designers and developers.",
+    link: "https://www.happyhues.co",
+    tags: ["design", "typography"],
+  },
 ];
 
 export default data;
