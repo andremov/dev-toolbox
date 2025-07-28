@@ -75,7 +75,7 @@ const data: Tool[] = [
     description:
       "A collection of roadmaps for developers to guide their learning and career paths.",
     link: "https://roadmap.sh",
-    tags: ["dev", "open-source"],
+    tags: ["dev"],
   },
   {
     name: "Mobbin",
@@ -101,11 +101,11 @@ const data: Tool[] = [
     tags: ["dev", "open-source", "docs"],
   },
   {
-    name: "React Flow",
+    name: "XY Flow",
     preview: "/previews/react-flow.png",
     description:
-      "A library for building interactive node-based applications with React.",
-    link: "https://reactflow.dev",
+      "A library for building interactive node-based applications for different web frameworks.",
+    link: "https://github.com/xyflow/xyflow",
     tags: ["dev", "open-source", "pkg"],
   },
   {
@@ -457,6 +457,30 @@ const data: Tool[] = [
       "A curated collection of color palettes and design inspiration for web designers and developers.",
     link: "https://www.happyhues.co",
     tags: ["design", "typography"],
+  },
+  {
+    name: "Beekeeper Studio",
+    preview: "/previews/beekeeper-studio.png",
+    description:
+      "An open-source SQL editor and database management tool that supports various databases.",
+    link: "https://github.com/beekeeper-studio/beekeeper-studio",
+    tags: ["dev", "open-source"],
+  },
+  {
+    name: "drawDB",
+    preview: "/previews/drawdb.png",
+    description:
+      "A tool for creating and managing database diagrams, making it easy to visualize and design your database schema.",
+    link: "https://drawdb.app",
+    tags: ["dev", "open-source", "docs"],
+  },
+  {
+    name: "ChartDB",
+    preview: "/previews/chartdb.png",
+    description:
+      "A tool for creating and managing charts and visualizations from your database data.",
+    link: "https://chartdb.io",
+    tags: ["dev", "open-source", "docs"],
   },
 ];
 
