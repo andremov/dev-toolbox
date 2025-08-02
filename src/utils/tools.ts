@@ -482,6 +482,30 @@ const data: Tool[] = [
     link: "https://chartdb.io",
     tags: ["dev", "open-source", "docs"],
   },
+  {
+    name: "Kdenlive",
+    preview: "/previews/kdenlive.png",
+    description:
+      "A free and open-source video editor that provides a wide range of features for video editing and production.",
+    link: "https://kdenlive.org",
+    tags: ["open-source", "video"],
+  },
+  {
+    name: "Shotcut",
+    preview: "/previews/shotcut.png",
+    description:
+      "A free, open-source, cross-platform video editor that supports a wide range of formats and features.",
+    link: "https://shotcut.org",
+    tags: ["open-source", "video"],
+  },
+  {
+    name: "Penpot",
+    preview: "/previews/penpot.png",
+    description:
+      "An open-source design and prototyping tool for creating user interfaces and interactive designs.",
+    link: "https://penpot.app",
+    tags: ["design", "open-source"],
+  },
 ];
 
 export default data;
