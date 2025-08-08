@@ -506,6 +506,14 @@ const data: Tool[] = [
     link: "https://penpot.app",
     tags: ["design", "open-source"],
   },
+  {
+    name: "toolfinder",
+    preview: "/previews/toolfinder.png",
+    description:
+      "A tool for finding the right development tools for your projects.",
+    link: "https://toolfinder.co",
+    tags: ["dev"],
+  },
 ];
 
 export default data;
