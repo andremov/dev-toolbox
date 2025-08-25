@@ -38,259 +38,7 @@ const tagColorMap: Record<Tag, string> = {
   video: "bg-amber-100 text-amber-800",
 };
 
-const data: Tool[] = [
-  {
-    name: "XY Flow",
-    preview: "/previews/react-flow.png",
-    description:
-      "A library for building interactive node-based applications for different web frameworks.",
-    link: "https://github.com/xyflow/xyflow",
-    tags: ["dev", "open-source", "pkg"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "React Spreadsheet",
-    preview: "/previews/react-spreadsheet.png",
-    description:
-      "A React component for creating interactive spreadsheets with features like formulas and cell formatting.",
-    link: "https://iddan.github.io/react-spreadsheet/",
-    tags: ["dev", "open-source", "pkg"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "No Code Architects Toolkit",
-    preview: "/previews/no-code-architects-toolkit.png",
-    description:
-      "The NCA toolkit eliminates monthly subscription fees by consolidating common API functionalities into a single free API.",
-    link: "https://github.com/stephengpope/no-code-architects-toolkit",
-    tags: ["dev", "open-source"],
-    category: "Open Source Tools & Utilities",
-  },
-  {
-    name: "Stirling PDF",
-    preview: "/previews/stirling-pdf.png",
-    description:
-      "A tool for generating and manipulating PDF documents with ease.",
-    link: "https://stirlingpdf.com",
-    tags: ["dev", "open-source"],
-    category: "Open Source Tools & Utilities",
-  },
-  {
-    name: "Sonner - Toast Notifications",
-    preview: "/previews/sonner.png",
-    description:
-      "A React library for creating beautiful toast notifications with minimal configuration.",
-    link: "hhttps://sonner.emilkowal.ski/",
-    tags: ["dev", "open-source", "pkg"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "Vaul - Drawers and Modals",
-    preview: "/previews/vaul.png",
-    description:
-      "A React library for creating drawers and modals with a focus on accessibility and usability.",
-    link: "https://vaul.emilkowal.ski/",
-    tags: ["dev", "open-source", "pkg"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "AdminJS",
-    preview: "/previews/adminjs.png",
-    description:
-      "An admin panel for Node.js applications that provides a customizable and easy-to-use interface for managing your application data.",
-    link: "https://adminjs.co",
-    tags: ["dev", "open-source", "pkg"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "Inquirer.js",
-    preview: "/previews/inquirer.png",
-    description:
-      "A collection of common interactive command line user interfaces for Node.js applications.",
-    link: "https://github.com/SBoudrias/Inquirer.js",
-    tags: ["dev", "open-source", "pkg", "terminal"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "Chalk",
-    preview: "/previews/chalk.png",
-    description:
-      "A library for styling terminal strings with colors and styles, making your command line applications more visually appealing.",
-    link: "https://github.com/chalk/chalk",
-    tags: ["dev", "open-source", "pkg", "terminal"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "VHS - Charm Bracelet",
-    preview: "/previews/vhs-charm.png",
-    description:
-      "A terminal emulator for integration testing and demoing CLI tools.",
-    link: "https://github.com/charmbracelet/vhs",
-    tags: ["dev", "open-source", "pkg", "terminal"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "Soft Serve - Charm Bracelet",
-    preview: "/previews/soft-serve-charm.png",
-    description:
-      "A simple, self-hosted Git server for small teams and personal projects.",
-    link: "https://github.com/charmbracelet/soft-serve",
-    tags: ["dev", "open-source", "pkg", "terminal"],
-    category: "Open Source Tools & Utilities",
-  },
-  {
-    name: "Huh? - Charm Bracelet",
-    preview: "/previews/huh-charm.png",
-    description:
-      "A library for building interactive command line applications with a focus on simplicity and usability.",
-    link: "https://github.com/charmbracelet/huh",
-    tags: ["dev", "open-source", "pkg", "terminal"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "Bubble Tea - Charm Bracelet",
-    preview: "/previews/bubble-tea-charm.png",
-    description:
-      "A Go framework for building terminal applications with a focus on simplicity and usability.",
-    link: "https://github.com/charmbracelet/bubbletea",
-    tags: ["dev", "open-source", "pkg", "terminal"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "Actual Budget",
-    preview: "/previews/actual-budget.png",
-    description:
-      "A personal finance tool that helps you track your expenses and manage your budget effectively.",
-    link: "https://actualbudget.org/",
-    tags: ["open-source"],
-    category: "Productivity & Utilities",
-  },
-  {
-    name: "Fast Average Color",
-    preview: "/previews/fast-average-color.png",
-    description:
-      "A tool for quickly calculating the average color of an image, useful for design and development purposes.",
-    link: "https://github.com/fast-average-color/fast-average-color",
-    tags: ["dev", "open-source", "pkg"],
-    category: "Open Source Tools & Utilities",
-  },
-  {
-    name: "Zustand",
-    preview: "/previews/zustand.png",
-    description:
-      "A small, fast, and scalable state management solution for React applications.",
-    link: "https://github.com/pmndrs/zustand",
-    tags: ["dev", "open-source", "pkg"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "Remix",
-    preview: "/previews/remix.png",
-    description:
-      "A modern web framework for building fast, dynamic, and user-friendly web applications.",
-    link: "https://remix.run",
-    tags: ["dev", "open-source"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "Node 2FA",
-    preview: "/previews/node-2fa.png",
-    description:
-      "A Node.js library for implementing two-factor authentication in your applications.",
-    link: "https://github.com/jeremyscalpello/node-2fa",
-    tags: ["dev", "open-source", "pkg"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "Floating UI",
-    preview: "/previews/floating-ui.png",
-    description:
-      "A library for creating floating elements like tooltips, popovers, and dropdowns in web applications.",
-    link: "https://floating-ui.com",
-    tags: ["dev", "open-source", "pkg"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "Use Gesture",
-    preview: "/previews/use-gesture.png",
-    description:
-      "A React library for handling gestures like pinch, swipe, and drag in web applications.",
-    link: "https://github.com/pmndrs/use-gesture",
-    tags: ["dev", "open-source", "pkg"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "Gui JS",
-    preview: "/previews/gui-js.png",
-    description:
-      "A JavaScript library for managing graphical user interfaces with a focus on simplicity and ease of use.",
-    link: "https://github.com/Akryum/guijs",
-    tags: ["dev", "open-source", "pkg"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "QR Code Generator",
-    preview: "/previews/qr-code-generator.png",
-    description:
-      "A simple tool for generating QR codes for various purposes, including URLs, text, and more.",
-    link: "https://andremov-qr-code-generator.vercel.app/",
-    tags: ["dev"],
-    category: "Productivity & Utilities",
-  },
-  {
-    name: "QR Code Library",
-    preview: "/previews/qr-code-library.png",
-    description:
-      "A JavaScript library for generating QR codes in web applications, allowing you to create custom QR codes with various styles and options.",
-    link: "https://github.com/nayuki/QR-Code-generator",
-    tags: ["dev", "open-source", "pkg"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "Franz",
-    preview: "/previews/franz.png",
-    description:
-      "A messaging app for connecting multiple chat and messaging services in one place.",
-    link: "https://github.com/meetfranz/franz",
-    tags: ["dev", "open-source", "pkg"],
-    category: "Productivity & Utilities",
-  },
-  {
-    name: "Copy as Markdown",
-    preview: "/previews/copy-as-markdown.png",
-    description: "A React hook to copy text as Markdown.",
-    link: "https://github.com/cpojer/copy-as-markdown",
-    tags: ["dev", "open-source", "pkg"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "Turndown",
-    preview: "/previews/turndown.png",
-    description:
-      "A JavaScript library for converting HTML into Markdown, making it easy to extract content from web pages and other HTML sources.",
-    link: "https://github.com/mixmark-io/turndown",
-    tags: ["dev", "open-source", "pkg"],
-    category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "Beekeeper Studio",
-    preview: "/previews/beekeeper-studio.png",
-    description:
-      "An open-source SQL editor and database management tool that supports various databases.",
-    link: "https://github.com/beekeeper-studio/beekeeper-studio",
-    tags: ["dev", "open-source"],
-    category: "Open Source Tools & Utilities",
-  },
-  {
-    name: "toolfinder",
-    preview: "/previews/toolfinder.png",
-    description:
-      "A tool for finding the right development tools for your projects.",
-    link: "https://toolfinder.co",
-    tags: ["dev"],
-    category: "Productivity & Utilities",
-  },
-];
+const data: Tool[] = [];
 
 export default data;
 
@@ -629,5 +377,265 @@ export const audioAndVideo: Tool[] = [
     link: "https://shotcut.org",
     tags: ["open-source", "video"],
     category: "Audio & Video",
+  },
+];
+
+export const developmentLibrariesAndFrameworks: Tool[] = [
+  {
+    name: "XY Flow",
+    preview: "/previews/react-flow.png",
+    description:
+      "A library for building interactive node-based applications for different web frameworks.",
+    link: "https://github.com/xyflow/xyflow",
+    tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "React Spreadsheet",
+    preview: "/previews/react-spreadsheet.png",
+    description:
+      "A React component for creating interactive spreadsheets with features like formulas and cell formatting.",
+    link: "https://iddan.github.io/react-spreadsheet/",
+    tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "Sonner - Toast Notifications",
+    preview: "/previews/sonner.png",
+    description:
+      "A React library for creating beautiful toast notifications with minimal configuration.",
+    link: "hhttps://sonner.emilkowal.ski/",
+    tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "Vaul - Drawers and Modals",
+    preview: "/previews/vaul.png",
+    description:
+      "A React library for creating drawers and modals with a focus on accessibility and usability.",
+    link: "https://vaul.emilkowal.ski/",
+    tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "AdminJS",
+    preview: "/previews/adminjs.png",
+    description:
+      "An admin panel for Node.js applications that provides a customizable and easy-to-use interface for managing your application data.",
+    link: "https://adminjs.co",
+    tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "Inquirer.js",
+    preview: "/previews/inquirer.png",
+    description:
+      "A collection of common interactive command line user interfaces for Node.js applications.",
+    link: "https://github.com/SBoudrias/Inquirer.js",
+    tags: ["dev", "open-source", "pkg", "terminal"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "Chalk",
+    preview: "/previews/chalk.png",
+    description:
+      "A library for styling terminal strings with colors and styles, making your command line applications more visually appealing.",
+    link: "https://github.com/chalk/chalk",
+    tags: ["dev", "open-source", "pkg", "terminal"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "VHS - Charm Bracelet",
+    preview: "/previews/vhs-charm.png",
+    description:
+      "A terminal emulator for integration testing and demoing CLI tools.",
+    link: "https://github.com/charmbracelet/vhs",
+    tags: ["dev", "open-source", "pkg", "terminal"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "Huh? - Charm Bracelet",
+    preview: "/previews/huh-charm.png",
+    description:
+      "A library for building interactive command line applications with a focus on simplicity and usability.",
+    link: "https://github.com/charmbracelet/huh",
+    tags: ["dev", "open-source", "pkg", "terminal"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "Bubble Tea - Charm Bracelet",
+    preview: "/previews/bubble-tea-charm.png",
+    description:
+      "A Go framework for building terminal applications with a focus on simplicity and usability.",
+    link: "https://github.com/charmbracelet/bubbletea",
+    tags: ["dev", "open-source", "pkg", "terminal"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "Zustand",
+    preview: "/previews/zustand.png",
+    description:
+      "A small, fast, and scalable state management solution for React applications.",
+    link: "https://github.com/pmndrs/zustand",
+    tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "Remix",
+    preview: "/previews/remix.png",
+    description:
+      "A modern web framework for building fast, dynamic, and user-friendly web applications.",
+    link: "https://remix.run",
+    tags: ["dev", "open-source"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "Node 2FA",
+    preview: "/previews/node-2fa.png",
+    description:
+      "A Node.js library for implementing two-factor authentication in your applications.",
+    link: "https://github.com/jeremyscalpello/node-2fa",
+    tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "Floating UI",
+    preview: "/previews/floating-ui.png",
+    description:
+      "A library for creating floating elements like tooltips, popovers, and dropdowns in web applications.",
+    link: "https://floating-ui.com",
+    tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "Use Gesture",
+    preview: "/previews/use-gesture.png",
+    description:
+      "A React library for handling gestures like pinch, swipe, and drag in web applications.",
+    link: "https://github.com/pmndrs/use-gesture",
+    tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "Gui JS",
+    preview: "/previews/gui-js.png",
+    description:
+      "A JavaScript library for managing graphical user interfaces with a focus on simplicity and ease of use.",
+    link: "https://github.com/Akryum/guijs",
+    tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "QR Code Library",
+    preview: "/previews/qr-code-library.png",
+    description:
+      "A JavaScript library for generating QR codes in web applications, allowing you to create custom QR codes with various styles and options.",
+    link: "https://github.com/nayuki/QR-Code-generator",
+    tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "Copy as Markdown",
+    preview: "/previews/copy-as-markdown.png",
+    description: "A React hook to copy text as Markdown.",
+    link: "https://github.com/cpojer/copy-as-markdown",
+    tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
+  },
+  {
+    name: "Turndown",
+    preview: "/previews/turndown.png",
+    description:
+      "A JavaScript library for converting HTML into Markdown, making it easy to extract content from web pages and other HTML sources.",
+    link: "https://github.com/mixmark-io/turndown",
+    tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
+  },
+];
+
+export const openSourceToolsAndUtilities: Tool[] = [
+  {
+    name: "No Code Architects Toolkit",
+    preview: "/previews/no-code-architects-toolkit.png",
+    description:
+      "The NCA toolkit eliminates monthly subscription fees by consolidating common API functionalities into a single free API.",
+    link: "https://github.com/stephengpope/no-code-architects-toolkit",
+    tags: ["dev", "open-source"],
+    category: "Open Source Tools & Utilities",
+  },
+  {
+    name: "Stirling PDF",
+    preview: "/previews/stirling-pdf.png",
+    description:
+      "A tool for generating and manipulating PDF documents with ease.",
+    link: "https://stirlingpdf.com",
+    tags: ["dev", "open-source"],
+    category: "Open Source Tools & Utilities",
+  },
+  {
+    name: "Soft Serve - Charm Bracelet",
+    preview: "/previews/soft-serve-charm.png",
+    description:
+      "A simple, self-hosted Git server for small teams and personal projects.",
+    link: "https://github.com/charmbracelet/soft-serve",
+    tags: ["dev", "open-source", "pkg", "terminal"],
+    category: "Open Source Tools & Utilities",
+  },
+  {
+    name: "Fast Average Color",
+    preview: "/previews/fast-average-color.png",
+    description:
+      "A tool for quickly calculating the average color of an image, useful for design and development purposes.",
+    link: "https://github.com/fast-average-color/fast-average-color",
+    tags: ["dev", "open-source", "pkg"],
+    category: "Open Source Tools & Utilities",
+  },
+  {
+    name: "Beekeeper Studio",
+    preview: "/previews/beekeeper-studio.png",
+    description:
+      "An open-source SQL editor and database management tool that supports various databases.",
+    link: "https://github.com/beekeeper-studio/beekeeper-studio",
+    tags: ["dev", "open-source"],
+    category: "Open Source Tools & Utilities",
+  },
+];
+
+export const productivityAndUtilities: Tool[] = [
+  {
+    name: "Actual Budget",
+    preview: "/previews/actual-budget.png",
+    description:
+      "A personal finance tool that helps you track your expenses and manage your budget effectively.",
+    link: "https://actualbudget.org/",
+    tags: ["open-source"],
+    category: "Productivity & Utilities",
+  },
+  {
+    name: "QR Code Generator",
+    preview: "/previews/qr-code-generator.png",
+    description:
+      "A simple tool for generating QR codes for various purposes, including URLs, text, and more.",
+    link: "https://andremov-qr-code-generator.vercel.app/",
+    tags: ["dev"],
+    category: "Productivity & Utilities",
+  },
+  {
+    name: "Franz",
+    preview: "/previews/franz.png",
+    description:
+      "A messaging app for connecting multiple chat and messaging services in one place.",
+    link: "https://github.com/meetfranz/franz",
+    tags: ["dev", "open-source", "pkg"],
+    category: "Productivity & Utilities",
+  },
+  {
+    name: "toolfinder",
+    preview: "/previews/toolfinder.png",
+    description:
+      "A tool for finding the right development tools for your projects.",
+    link: "https://toolfinder.co",
+    tags: ["dev"],
+    category: "Productivity & Utilities",
   },
 ];
