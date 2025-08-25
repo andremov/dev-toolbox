@@ -236,4 +236,11 @@ export const designAndUI: Resource[] = [
     link: 'https://tinte.dev/shadcn',
     tags: ['design', 'dev'],
   },
+  {
+    name: 'Resourceboy',
+    preview: '/previews/resourceboy.png',
+    description: 'A collection of fonts, textures, mockups, patterns and more.',
+    link: 'https://resourceboy.com/',
+    tags: ['design'],
+  },
 ];

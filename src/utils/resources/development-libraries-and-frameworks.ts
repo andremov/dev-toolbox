@@ -150,4 +150,25 @@ export const developmentLibrariesAndFrameworks: Resource[] = [
     link: 'https://github.com/mixmark-io/turndown',
     tags: ['dev', 'open-source', 'pkg'],
   },
+  {
+    name: 'Pandoc',
+    preview: '/previews/pandoc.png',
+    description: 'A universal document converter.',
+    link: 'https://pandoc.org/',
+    tags: ['dev', 'docs', 'pkg'],
+  },
+  {
+    name: 'Overtype',
+    preview: '/previews/overtype.png',
+    description: 'A textarea with rendered markdown.',
+    link: 'https://overtype.dev/',
+    tags: ['dev', 'open-source', 'pkg'],
+  },
+  {
+    name: 'Driver.js',
+    preview: '/previews/driver.png',
+    description: 'A library for product tours and user onboarding.',
+    link: 'https://driverjs.com/',
+    tags: ['dev', 'open-source', 'pkg'],
+  },
 ];
