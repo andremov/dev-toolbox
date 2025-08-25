@@ -211,24 +211,6 @@ const data: Tool[] = [
     category: "Development Libraries & Frameworks",
   },
   {
-    name: "Audacity",
-    preview: "/previews/audacity.png",
-    description:
-      "A free, open-source, cross-platform audio software for multi-track recording and editing.",
-    link: "https://github.com/audacity/audacity",
-    tags: ["dev", "open-source", "audio"],
-    category: "Audio & Video",
-  },
-  {
-    name: "Remotion",
-    preview: "/previews/remotion.png",
-    description:
-      "A React library for creating videos programmatically, allowing you to build complex video compositions with React components.",
-    link: "https://www.remotion.dev",
-    tags: ["dev", "open-source", "video"],
-    category: "Audio & Video",
-  },
-  {
     name: "Use Gesture",
     preview: "/previews/use-gesture.png",
     description:
@@ -245,15 +227,6 @@ const data: Tool[] = [
     link: "https://github.com/Akryum/guijs",
     tags: ["dev", "open-source", "pkg"],
     category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "FFmpeg",
-    preview: "/previews/ffmpeg.png",
-    description:
-      "A powerful multimedia framework for handling video, audio, and other multimedia files and streams.",
-    link: "https://github.com/FFmpeg/FFmpeg",
-    tags: ["dev", "open-source", "audio", "video"],
-    category: "Audio & Video",
   },
   {
     name: "QR Code Generator",
@@ -307,24 +280,6 @@ const data: Tool[] = [
     link: "https://github.com/beekeeper-studio/beekeeper-studio",
     tags: ["dev", "open-source"],
     category: "Open Source Tools & Utilities",
-  },
-  {
-    name: "Kdenlive",
-    preview: "/previews/kdenlive.png",
-    description:
-      "A free and open-source video editor that provides a wide range of features for video editing and production.",
-    link: "https://kdenlive.org",
-    tags: ["open-source", "video"],
-    category: "Audio & Video",
-  },
-  {
-    name: "Shotcut",
-    preview: "/previews/shotcut.png",
-    description:
-      "A free, open-source, cross-platform video editor that supports a wide range of formats and features.",
-    link: "https://shotcut.org",
-    tags: ["open-source", "video"],
-    category: "Audio & Video",
   },
   {
     name: "toolfinder",
@@ -626,5 +581,53 @@ export const documentationAndLearning: Tool[] = [
     link: "https://www.patterns.dev/",
     tags: ["dev", "docs", "open-source"],
     category: "Documentation & Learning",
+  },
+];
+
+export const audioAndVideo: Tool[] = [
+  {
+    name: "Audacity",
+    preview: "/previews/audacity.png",
+    description:
+      "A free, open-source, cross-platform audio software for multi-track recording and editing.",
+    link: "https://github.com/audacity/audacity",
+    tags: ["dev", "open-source", "audio"],
+    category: "Audio & Video",
+  },
+  {
+    name: "Remotion",
+    preview: "/previews/remotion.png",
+    description:
+      "A React library for creating videos programmatically, allowing you to build complex video compositions with React components.",
+    link: "https://www.remotion.dev",
+    tags: ["dev", "open-source", "video"],
+    category: "Audio & Video",
+  },
+  {
+    name: "FFmpeg",
+    preview: "/previews/ffmpeg.png",
+    description:
+      "A powerful multimedia framework for handling video, audio, and other multimedia files and streams.",
+    link: "https://github.com/FFmpeg/FFmpeg",
+    tags: ["dev", "open-source", "audio", "video"],
+    category: "Audio & Video",
+  },
+  {
+    name: "Kdenlive",
+    preview: "/previews/kdenlive.png",
+    description:
+      "A free and open-source video editor that provides a wide range of features for video editing and production.",
+    link: "https://kdenlive.org",
+    tags: ["open-source", "video"],
+    category: "Audio & Video",
+  },
+  {
+    name: "Shotcut",
+    preview: "/previews/shotcut.png",
+    description:
+      "A free, open-source, cross-platform video editor that supports a wide range of formats and features.",
+    link: "https://shotcut.org",
+    tags: ["open-source", "video"],
+    category: "Audio & Video",
   },
 ];
