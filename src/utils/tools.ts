@@ -40,15 +40,6 @@ const tagColorMap: Record<Tag, string> = {
 
 const data: Tool[] = [
   {
-    name: "Free Faces Gallery",
-    preview: "/previews/free-faces-gallery.png",
-    description:
-      "A collection of free-to-use font faces for various applications.",
-    link: "https://freefaces.gallery",
-    tags: ["font", "design", "typography"],
-    category: "Fonts & Typography",
-  },
-  {
     name: "Lucide Icons",
     preview: "/previews/lucide.png",
     description:
@@ -126,14 +117,6 @@ const data: Tool[] = [
     link: "https://iddan.github.io/react-spreadsheet/",
     tags: ["dev", "open-source", "pkg"],
     category: "Development Libraries & Frameworks",
-  },
-  {
-    name: "Font Share",
-    preview: "/previews/font-share.png",
-    description: "A collection of free-to-use fonts for various applications.",
-    link: "https://fontshare.com",
-    tags: ["font", "typography", "open-source"],
-    category: "Fonts & Typography",
   },
   {
     name: "No Code Architects Toolkit",
@@ -616,3 +599,23 @@ const data: Tool[] = [
 export default data;
 
 export { tagColorMap, type Tag, type Tool };
+
+export const fontsAndTypography: Tool[] = [
+  {
+    name: "Free Faces Gallery",
+    preview: "/previews/free-faces-gallery.png",
+    description:
+      "A collection of free-to-use font faces for various applications.",
+    link: "https://freefaces.gallery",
+    tags: ["font", "design", "typography"],
+    category: "Fonts & Typography",
+  },
+  {
+    name: "Font Share",
+    preview: "/previews/font-share.png",
+    description: "A collection of free-to-use fonts for various applications.",
+    link: "https://fontshare.com",
+    tags: ["font", "typography", "open-source"],
+    category: "Fonts & Typography",
+  },
+];
