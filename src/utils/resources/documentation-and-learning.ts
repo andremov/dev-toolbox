@@ -64,4 +64,18 @@ export const documentationAndLearning: Resource[] = [
     link: 'https://www.patterns.dev/',
     tags: ['dev', 'docs', 'open-source'],
   },
+  {
+    name: 'Mintlify',
+    description: 'A documentation generator powered by AI.',
+    preview: '/previews/mintlify.png',
+    link: 'https://mintlify.com/',
+    tags: ['design', 'dev'],
+  },
+  {
+    name: 'Signature PDF',
+    description: 'A tool for creating and signing PDF documents.',
+    preview: '/previews/signature-pdf.png',
+    link: 'https://pdf.24eme.fr/',
+    tags: ['design', 'dev'],
+  },
 ];
