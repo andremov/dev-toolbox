@@ -1,23 +1,87 @@
 ---
-import ToolTile from '../components/tool-tile.astro';
-import type { Tool } from '../utils/types';
+import {
+  aiAndData,
+  audioAndVideo,
+  designAndUI,
+  developmentLibrariesAndFrameworks,
+  documentationAndLearning,
+  fontsAndTypography,
+  openSourceToolsAndUtilities,
+  allTags
+ } from '../utils/resources';
+import SingleResourceGridSection from './single-resource-grid-section.astro';
 
-export interface Props {
-  tools: Tool[];
-}
-
-const { tools } = Astro.props;
+// Get all unique tags from the data
 ---
 
+<div class="container mx-auto mb-8 mt-6 md:mt-12 px-2">
+  <!-- Filter Controls -->
+  <div class="mb-6">
+    <div class="flex flex-wrap gap-2 mb-4 justify-center">
+      <button 
+        class="filter-btn ring-2 ring-violet-500 ring-opacity-50 rounded-full py-1 px-3 text-sm border border-neutral-600 bg-neutral-800 text-white hover:bg-neutral-700 transition-colors"
+        data-tag="all"
+      >
+        All
+      </button>
+      {allTags.map((tag) => (
+        <button 
+          class="filter-btn rounded-full py-1 px-3 text-sm border border-neutral-600 bg-neutral-900 text-gray-300 hover:bg-neutral-700 hover:text-white transition-colors"
+          data-tag={tag}
+        >
+          {tag}
+        </button>
+      ))}
+    </div>
+  </div>
+
+  <!-- Resources Grid -->
+  <h2 class="text-2xl font-bold mb-4 text-center">
+    AI and Data Resources
+  </h2>
+  <SingleResourceGridSection tools={aiAndData} />
+
+  <br /><br /><br />
   
-<div class="tools-grid grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-4" id="tools-grid">
-  {
-    tools.map((tool) => (
-      <div class="tool-item" data-tags={tool.tags.join(',')}>
-        <ToolTile {...tool} lazy={true} />
-      </div>
-    ))
-  }
+  <h2 class="text-2xl font-bold mb-4 text-center">
+    Audio and Video Resources
+  </h2>
+  <SingleResourceGridSection tools={audioAndVideo} />
+
+  <br /><br /><br />
+
+  <h2 class="text-2xl font-bold mb-4 text-center">
+    Design and UI Resources
+  </h2>
+  <SingleResourceGridSection tools={designAndUI} />
+
+  <br /><br /><br />
+
+  <h2 class="text-2xl font-bold mb-4 text-center">
+    Development Libraries and Frameworks
+  </h2>
+  <SingleResourceGridSection tools={developmentLibrariesAndFrameworks} />
+
+  <br /><br /><br />
+
+  <h2 class="text-2xl font-bold mb-4 text-center">
+    Documentation and Learning Resources
+  </h2>
+  <SingleResourceGridSection tools={documentationAndLearning} />
+
+  <br /><br /><br />
+
+  <h2 class="text-2xl font-bold mb-4 text-center">
+    Fonts and Typography Resources
+  </h2>
+  <SingleResourceGridSection tools={fontsAndTypography} />
+
+  <br /><br /><br />
+
+  <h2 class="text-2xl font-bold mb-4 text-center">
+    Open Source Tools and Utilities
+  </h2>
+  <SingleResourceGridSection tools={openSourceToolsAndUtilities} />
 </div>
 
 <script>
