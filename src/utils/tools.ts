@@ -4,6 +4,7 @@ type Tool = {
   preview: string;
   link: string;
   tags: Tag[];
+  category: string;
 };
 
 type Tag =
@@ -45,6 +46,7 @@ const data: Tool[] = [
       "A collection of free-to-use font faces for various applications.",
     link: "https://freefaces.gallery",
     tags: ["font", "design", "typography"],
+    category: "Fonts & Typography",
   },
   {
     name: "Lucide Icons",
@@ -53,6 +55,7 @@ const data: Tool[] = [
       "Lucide is a collection of open-source icons designed to be simple and consistent.",
     link: "https://lucide.dev",
     tags: ["icon", "design", "open-source"],
+    category: "Design & UI",
   },
   {
     name: "JSON Data AI",
@@ -61,6 +64,7 @@ const data: Tool[] = [
       "A tool that generates JSON data for various applications using AI.",
     link: "https://jsondata.com",
     tags: ["dev", "ai"],
+    category: "AI & Data",
   },
   {
     name: "DeepSeek AI Repository",
@@ -68,6 +72,7 @@ const data: Tool[] = [
     description: "A repository of AI tools and resources provided by DeepSeek.",
     link: "https://github.com/deepseek-ai",
     tags: ["ai", "open-source", "dev"],
+    category: "AI & Data",
   },
   {
     name: "Dev Roadmaps",
@@ -76,6 +81,7 @@ const data: Tool[] = [
       "A collection of roadmaps for developers to guide their learning and career paths.",
     link: "https://roadmap.sh",
     tags: ["dev"],
+    category: "Documentation & Learning",
   },
   {
     name: "Mobbin",
@@ -84,6 +90,7 @@ const data: Tool[] = [
       "A design library with a collection of mobile app designs and patterns.",
     link: "https://mobbin.com",
     tags: ["design", "typography"],
+    category: "Design & UI",
   },
   {
     name: "Tailwind CSS Colors",
@@ -91,6 +98,7 @@ const data: Tool[] = [
     description: "A sample website to sample color palettes for Tailwind CSS.",
     link: "https://uicolors.app/",
     tags: ["dev", "design"],
+    category: "Design & UI",
   },
   {
     name: "Starlight Docs",
@@ -99,6 +107,7 @@ const data: Tool[] = [
       "A modern documentation site generator that helps you create beautiful and functional docs.",
     link: "https://starlight.astro.build",
     tags: ["dev", "open-source", "docs"],
+    category: "Documentation & Learning",
   },
   {
     name: "XY Flow",
@@ -107,6 +116,7 @@ const data: Tool[] = [
       "A library for building interactive node-based applications for different web frameworks.",
     link: "https://github.com/xyflow/xyflow",
     tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "React Spreadsheet",
@@ -115,6 +125,7 @@ const data: Tool[] = [
       "A React component for creating interactive spreadsheets with features like formulas and cell formatting.",
     link: "https://iddan.github.io/react-spreadsheet/",
     tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "Font Share",
@@ -122,6 +133,7 @@ const data: Tool[] = [
     description: "A collection of free-to-use fonts for various applications.",
     link: "https://fontshare.com",
     tags: ["font", "typography", "open-source"],
+    category: "Fonts & Typography",
   },
   {
     name: "No Code Architects Toolkit",
@@ -130,6 +142,7 @@ const data: Tool[] = [
       "The NCA toolkit eliminates monthly subscription fees by consolidating common API functionalities into a single free API.",
     link: "https://github.com/stephengpope/no-code-architects-toolkit",
     tags: ["dev", "open-source"],
+    category: "Open Source Tools & Utilities",
   },
   {
     name: "Stirling PDF",
@@ -138,6 +151,7 @@ const data: Tool[] = [
       "A tool for generating and manipulating PDF documents with ease.",
     link: "https://stirlingpdf.com",
     tags: ["dev", "open-source"],
+    category: "Open Source Tools & Utilities",
   },
   {
     name: "Carbon",
@@ -146,6 +160,7 @@ const data: Tool[] = [
       "A desktop application for creating beautiful images of your source code.",
     link: "https://carbon.now.sh",
     tags: ["dev", "design", "open-source", "terminal"],
+    category: "Design & UI",
   },
   {
     name: "Docmost",
@@ -154,6 +169,7 @@ const data: Tool[] = [
       "A tool for creating and managing documentation with a focus on simplicity and usability.",
     link: "https://docmost.com",
     tags: ["dev", "open-source", "notes"],
+    category: "Documentation & Learning",
   },
   {
     name: "Obsidian",
@@ -162,6 +178,7 @@ const data: Tool[] = [
       "A powerful knowledge base that works on local Markdown files, allowing you to create and manage your notes and documents with ease.",
     link: "https://obsidian.md",
     tags: ["dev", "open-source", "notes"],
+    category: "Documentation & Learning",
   },
   {
     name: "Sonner - Toast Notifications",
@@ -170,6 +187,7 @@ const data: Tool[] = [
       "A React library for creating beautiful toast notifications with minimal configuration.",
     link: "hhttps://sonner.emilkowal.ski/",
     tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "Vaul - Drawers and Modals",
@@ -178,6 +196,7 @@ const data: Tool[] = [
       "A React library for creating drawers and modals with a focus on accessibility and usability.",
     link: "https://vaul.emilkowal.ski/",
     tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "AdminJS",
@@ -186,6 +205,7 @@ const data: Tool[] = [
       "An admin panel for Node.js applications that provides a customizable and easy-to-use interface for managing your application data.",
     link: "https://adminjs.co",
     tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "Inquirer.js",
@@ -194,6 +214,7 @@ const data: Tool[] = [
       "A collection of common interactive command line user interfaces for Node.js applications.",
     link: "https://github.com/SBoudrias/Inquirer.js",
     tags: ["dev", "open-source", "pkg", "terminal"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "Chalk",
@@ -202,6 +223,7 @@ const data: Tool[] = [
       "A library for styling terminal strings with colors and styles, making your command line applications more visually appealing.",
     link: "https://github.com/chalk/chalk",
     tags: ["dev", "open-source", "pkg", "terminal"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "VHS - Charm Bracelet",
@@ -210,6 +232,7 @@ const data: Tool[] = [
       "A terminal emulator for integration testing and demoing CLI tools.",
     link: "https://github.com/charmbracelet/vhs",
     tags: ["dev", "open-source", "pkg", "terminal"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "Soft Serve - Charm Bracelet",
@@ -218,6 +241,7 @@ const data: Tool[] = [
       "A simple, self-hosted Git server for small teams and personal projects.",
     link: "https://github.com/charmbracelet/soft-serve",
     tags: ["dev", "open-source", "pkg", "terminal"],
+    category: "Open Source Tools & Utilities",
   },
   {
     name: "Huh? - Charm Bracelet",
@@ -226,6 +250,7 @@ const data: Tool[] = [
       "A library for building interactive command line applications with a focus on simplicity and usability.",
     link: "https://github.com/charmbracelet/huh",
     tags: ["dev", "open-source", "pkg", "terminal"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "Bubble Tea - Charm Bracelet",
@@ -234,6 +259,7 @@ const data: Tool[] = [
       "A Go framework for building terminal applications with a focus on simplicity and usability.",
     link: "https://github.com/charmbracelet/bubbletea",
     tags: ["dev", "open-source", "pkg", "terminal"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "Glow - Charm Bracelet",
@@ -242,6 +268,7 @@ const data: Tool[] = [
       "A terminal-based Markdown reader that allows you to view and navigate Markdown files in your terminal.",
     link: "https://github.com/charmbracelet/glow",
     tags: ["dev", "open-source", "pkg", "terminal"],
+    category: "Documentation & Learning",
   },
   {
     name: "Actual Budget",
@@ -250,6 +277,7 @@ const data: Tool[] = [
       "A personal finance tool that helps you track your expenses and manage your budget effectively.",
     link: "https://actualbudget.org/",
     tags: ["open-source"],
+    category: "Productivity & Utilities",
   },
   {
     name: "Fast Average Color",
@@ -258,6 +286,7 @@ const data: Tool[] = [
       "A tool for quickly calculating the average color of an image, useful for design and development purposes.",
     link: "https://github.com/fast-average-color/fast-average-color",
     tags: ["dev", "open-source", "pkg"],
+    category: "Open Source Tools & Utilities",
   },
   {
     name: "Zustand",
@@ -266,6 +295,7 @@ const data: Tool[] = [
       "A small, fast, and scalable state management solution for React applications.",
     link: "https://github.com/pmndrs/zustand",
     tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "Tailwind CSS",
@@ -274,6 +304,7 @@ const data: Tool[] = [
       "A utility-first CSS framework for creating modern and responsive web designs.",
     link: "https://tailwindcss.com",
     tags: ["dev", "design", "open-source"],
+    category: "Design & UI",
   },
   {
     name: "Boring Avatars",
@@ -282,6 +313,7 @@ const data: Tool[] = [
       "A collection of simple, customizable avatars for use in web applications.",
     link: "https://boringavatars.com",
     tags: ["dev", "design", "open-source"],
+    category: "Design & UI",
   },
   {
     name: "Remix",
@@ -290,6 +322,7 @@ const data: Tool[] = [
       "A modern web framework for building fast, dynamic, and user-friendly web applications.",
     link: "https://remix.run",
     tags: ["dev", "open-source"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "Node 2FA",
@@ -298,6 +331,7 @@ const data: Tool[] = [
       "A Node.js library for implementing two-factor authentication in your applications.",
     link: "https://github.com/jeremyscalpello/node-2fa",
     tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "Floating UI",
@@ -306,6 +340,7 @@ const data: Tool[] = [
       "A library for creating floating elements like tooltips, popovers, and dropdowns in web applications.",
     link: "https://floating-ui.com",
     tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "Audacity",
@@ -314,6 +349,7 @@ const data: Tool[] = [
       "A free, open-source, cross-platform audio software for multi-track recording and editing.",
     link: "https://github.com/audacity/audacity",
     tags: ["dev", "open-source", "audio"],
+    category: "Audio & Video",
   },
   {
     name: "Remotion",
@@ -322,6 +358,7 @@ const data: Tool[] = [
       "A React library for creating videos programmatically, allowing you to build complex video compositions with React components.",
     link: "https://www.remotion.dev",
     tags: ["dev", "open-source", "video"],
+    category: "Audio & Video",
   },
   {
     name: "Use Gesture",
@@ -330,6 +367,7 @@ const data: Tool[] = [
       "A React library for handling gestures like pinch, swipe, and drag in web applications.",
     link: "https://github.com/pmndrs/use-gesture",
     tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "Gui JS",
@@ -338,6 +376,7 @@ const data: Tool[] = [
       "A JavaScript library for managing graphical user interfaces with a focus on simplicity and ease of use.",
     link: "https://github.com/Akryum/guijs",
     tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "FFmpeg",
@@ -346,6 +385,7 @@ const data: Tool[] = [
       "A powerful multimedia framework for handling video, audio, and other multimedia files and streams.",
     link: "https://github.com/FFmpeg/FFmpeg",
     tags: ["dev", "open-source", "audio", "video"],
+    category: "Audio & Video",
   },
   {
     name: "QR Code Generator",
@@ -354,6 +394,7 @@ const data: Tool[] = [
       "A simple tool for generating QR codes for various purposes, including URLs, text, and more.",
     link: "https://andremov-qr-code-generator.vercel.app/",
     tags: ["dev"],
+    category: "Productivity & Utilities",
   },
   {
     name: "QR Code Library",
@@ -362,6 +403,7 @@ const data: Tool[] = [
       "A JavaScript library for generating QR codes in web applications, allowing you to create custom QR codes with various styles and options.",
     link: "https://github.com/nayuki/QR-Code-generator",
     tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "Lottie Files",
@@ -370,6 +412,7 @@ const data: Tool[] = [
       "A library for rendering animations created with Adobe After Effects in web applications.",
     link: "https://github.com/lottiefiles",
     tags: ["dev", "design", "open-source"],
+    category: "Design & UI",
   },
   {
     name: "Franz",
@@ -378,6 +421,7 @@ const data: Tool[] = [
       "A messaging app for connecting multiple chat and messaging services in one place.",
     link: "https://github.com/meetfranz/franz",
     tags: ["dev", "open-source", "pkg"],
+    category: "Productivity & Utilities",
   },
   {
     name: "Copy as Markdown",
@@ -385,6 +429,7 @@ const data: Tool[] = [
     description: "A React hook to copy text as Markdown.",
     link: "https://github.com/cpojer/copy-as-markdown",
     tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "Turndown",
@@ -393,6 +438,7 @@ const data: Tool[] = [
       "A JavaScript library for converting HTML into Markdown, making it easy to extract content from web pages and other HTML sources.",
     link: "https://github.com/mixmark-io/turndown",
     tags: ["dev", "open-source", "pkg"],
+    category: "Development Libraries & Frameworks",
   },
   {
     name: "CSS Shadow Palette Generator",
@@ -401,6 +447,7 @@ const data: Tool[] = [
       "A tool for generating CSS shadow palettes, allowing you to create consistent and visually appealing shadows for your web designs.",
     link: "https://www.joshwcomeau.com/shadow-palette/",
     tags: ["dev", "design"],
+    category: "Design & UI",
   },
   {
     name: "CSS Gradient Generator",
@@ -409,6 +456,7 @@ const data: Tool[] = [
       "A tool for creating and customizing CSS gradients, making it easy to add beautiful gradients to your web designs.",
     link: "https://www.joshwcomeau.com/gradient-generator/",
     tags: ["dev", "design"],
+    category: "Design & UI",
   },
   {
     name: "JS Operator Lookup",
@@ -417,6 +465,7 @@ const data: Tool[] = [
       "A tool for looking up JavaScript operators and learn more about them.",
     link: "https://www.joshwcomeau.com/operator-lookup/",
     tags: ["dev", "docs"],
+    category: "Documentation & Learning",
   },
   {
     name: "JS Snippets",
@@ -425,6 +474,7 @@ const data: Tool[] = [
       "A collection of useful JavaScript snippets for various tasks and functionalities.",
     link: "https://www.joshwcomeau.com/snippets/",
     tags: ["dev", "docs"],
+    category: "Documentation & Learning",
   },
   {
     name: "SVG Blob generator",
@@ -433,6 +483,7 @@ const data: Tool[] = [
       "A tool for generating SVG blobs, allowing you to create unique and visually appealing shapes for your web designs.",
     link: "https://www.blobmaker.app/",
     tags: ["dev", "design"],
+    category: "Design & UI",
   },
   {
     name: "Unsplash",
@@ -441,6 +492,7 @@ const data: Tool[] = [
       "A platform for finding and sharing high-quality, free-to-use images for your projects.",
     link: "https://unsplash.com",
     tags: ["design"],
+    category: "Design & UI",
   },
   {
     name: "Deck Gallery",
@@ -449,6 +501,7 @@ const data: Tool[] = [
       "A collection of beautifully designed decks, slides, keynotes, guidelines, etc.",
     link: "https://deck.gallery",
     tags: ["design"],
+    category: "Design & UI",
   },
   {
     name: "Happy Hues",
@@ -457,6 +510,7 @@ const data: Tool[] = [
       "A curated collection of color palettes and design inspiration for web designers and developers.",
     link: "https://www.happyhues.co",
     tags: ["design", "typography"],
+    category: "Design & UI",
   },
   {
     name: "Beekeeper Studio",
@@ -465,6 +519,7 @@ const data: Tool[] = [
       "An open-source SQL editor and database management tool that supports various databases.",
     link: "https://github.com/beekeeper-studio/beekeeper-studio",
     tags: ["dev", "open-source"],
+    category: "Open Source Tools & Utilities",
   },
   {
     name: "drawDB",
@@ -473,6 +528,7 @@ const data: Tool[] = [
       "A tool for creating and managing database diagrams, making it easy to visualize and design your database schema.",
     link: "https://drawdb.app",
     tags: ["dev", "open-source", "docs"],
+    category: "Documentation & Learning",
   },
   {
     name: "ChartDB",
@@ -481,6 +537,7 @@ const data: Tool[] = [
       "A tool for creating and managing charts and visualizations from your database data.",
     link: "https://chartdb.io",
     tags: ["dev", "open-source", "docs"],
+    category: "Documentation & Learning",
   },
   {
     name: "Kdenlive",
@@ -489,6 +546,7 @@ const data: Tool[] = [
       "A free and open-source video editor that provides a wide range of features for video editing and production.",
     link: "https://kdenlive.org",
     tags: ["open-source", "video"],
+    category: "Audio & Video",
   },
   {
     name: "Shotcut",
@@ -497,6 +555,7 @@ const data: Tool[] = [
       "A free, open-source, cross-platform video editor that supports a wide range of formats and features.",
     link: "https://shotcut.org",
     tags: ["open-source", "video"],
+    category: "Audio & Video",
   },
   {
     name: "Penpot",
@@ -505,6 +564,7 @@ const data: Tool[] = [
       "An open-source design and prototyping tool for creating user interfaces and interactive designs.",
     link: "https://penpot.app",
     tags: ["design", "open-source"],
+    category: "Design & UI",
   },
   {
     name: "toolfinder",
@@ -513,6 +573,43 @@ const data: Tool[] = [
       "A tool for finding the right development tools for your projects.",
     link: "https://toolfinder.co",
     tags: ["dev"],
+    category: "Productivity & Utilities",
+  },
+  {
+    name: "Tailwind Buttons - ibelick",
+    preview: "/previews/tailwind-buttons-ibelick.png",
+    description:
+      "A collection of beautifully designed buttons using Tailwind CSS.",
+    link: "https://buttons.ibelick.com",
+    tags: ["dev", "design", "open-source"],
+    category: "Design & UI",
+  },
+  {
+    name: "Flexbox Labs",
+    preview: "/previews/flexbox-labs.png",
+    description:
+      "A collection of tools and resources for working with Flexbox layouts.",
+    link: "https://flexboxlabs.netlify.app",
+    tags: ["dev", "design", "open-source"],
+    category: "Design & UI",
+  },
+  {
+    name: "JavaScript Patterns",
+    preview: "/previews/javascript-patterns.png",
+    description:
+      "A collection of design patterns and best practices for writing clean and maintainable JavaScript code.",
+    link: "https://www.patterns.dev/",
+    tags: ["dev", "docs", "open-source"],
+    category: "Documentation & Learning",
+  },
+  {
+    name: "Mesh Gradient Generator",
+    preview: "/previews/mesh-gradient-generator.png",
+    description:
+      "A tool for generating beautiful mesh gradients for your designs.",
+    link: "https://www.learnui.design/tools/mesh-gradient-generator.html",
+    tags: ["dev", "design"],
+    category: "Design & UI",
   },
 ];
 
