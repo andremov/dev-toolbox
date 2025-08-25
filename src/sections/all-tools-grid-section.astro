@@ -1,22 +1,26 @@
 ---
 import ToolTile from '../components/tool-tile.astro';
-import data from '../utils/tools';
-import Tag from '../components/tag.astro';
+import {
+  aiAndData,
+  audioAndVideo,
+  designAndUI,
+  developmentLibrariesAndFrameworks,
+  documentationAndLearning,
+  fontsAndTypography,
+  openSourceToolsAndUtilities,
+  productivityAndUtilities,
+  allTags
+ } from '../utils/tools';
+// import Tag from '../components/tag.astro';
+import SingleToolGridSection from './single-tool-grid-section.astro';
 
 // Get all unique tags from the data
-const allTags = [...new Set(data.flatMap(tool => tool.tags))].sort();
 ---
 
 <div class="container mx-auto mb-8 mt-6 md:mt-12 px-2">
   <!-- Filter Controls -->
   <div class="mb-6">
-    <div class="flex items-center justify-between mb-3">
-      <h3 class="text-lg font-semibold text-white">Filter by tags:</h3>
-      <span id="tool-count" class="text-sm text-gray-400">
-        Showing {data.length} tools
-      </span>
-    </div>
-    <div class="flex flex-wrap gap-2 mb-4">
+    <div class="flex flex-wrap gap-2 mb-4 justify-center">
       <button 
         class="filter-btn ring-2 ring-violet-500 ring-opacity-50 rounded-full py-1 px-3 text-sm border border-neutral-600 bg-neutral-800 text-white hover:bg-neutral-700 transition-colors"
         data-tag="all"
@@ -35,15 +39,59 @@ const allTags = [...new Set(data.flatMap(tool => tool.tags))].sort();
   </div>
 
   <!-- Tools Grid -->
-  <div class="tools-grid grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-4" id="tools-grid">
-    {
-      data.map((tool) => (
-        <div class="tool-item" data-tags={tool.tags.join(',')}>
-          <ToolTile {...tool} lazy={true} />
-        </div>
-      ))
-    }
-  </div>
+  <h2 class="text-2xl font-bold mb-4 text-center">
+    AI and Data Tools
+  </h2>
+  <SingleToolGridSection tools={aiAndData} />
+
+  <br /><br /><br />
+  
+  <h2 class="text-2xl font-bold mb-4 text-center">
+    Audio and Video Tools
+  </h2>
+  <SingleToolGridSection tools={audioAndVideo} />
+
+  <br /><br /><br />
+
+  <h2 class="text-2xl font-bold mb-4 text-center">
+    Design and UI Tools
+  </h2>
+  <SingleToolGridSection tools={designAndUI} />
+
+  <br /><br /><br />
+
+  <h2 class="text-2xl font-bold mb-4 text-center">
+    Development Libraries and Frameworks
+  </h2>
+  <SingleToolGridSection tools={developmentLibrariesAndFrameworks} />
+
+  <br /><br /><br />
+
+  <h2 class="text-2xl font-bold mb-4 text-center">
+    Documentation and Learning Tools
+  </h2>
+  <SingleToolGridSection tools={documentationAndLearning} />
+
+  <br /><br /><br />
+
+  <h2 class="text-2xl font-bold mb-4 text-center">
+    Fonts and Typography Tools
+  </h2>
+  <SingleToolGridSection tools={fontsAndTypography} />
+
+  <br /><br /><br />
+
+  <h2 class="text-2xl font-bold mb-4 text-center">
+    Open Source Tools and Utilities
+  </h2>
+  <SingleToolGridSection tools={openSourceToolsAndUtilities} />
+
+  <br /><br /><br />
+
+  <h2 class="text-2xl font-bold mb-4 text-center">
+    Productivity and Utilities Tools
+  </h2>
+  <SingleToolGridSection tools={productivityAndUtilities} />
 </div>
 
 <script>

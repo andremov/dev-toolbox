@@ -12,26 +12,26 @@ export { developmentLibrariesAndFrameworks } from "./development-libraries-and-f
 export { openSourceToolsAndUtilities } from "./open-source-tools-and-utilities";
 export { productivityAndUtilities } from "./productivity-and-utilities";
 
-// Combined data for backward compatibility
-import { fontsAndTypography } from "./fonts-and-typography";
-import { designAndUI } from "./design-and-ui";
 import { aiAndData } from "./ai-and-data";
-import { documentationAndLearning } from "./documentation-and-learning";
 import { audioAndVideo } from "./audio-and-video";
+import { designAndUI } from "./design-and-ui";
 import { developmentLibrariesAndFrameworks } from "./development-libraries-and-frameworks";
+import { documentationAndLearning } from "./documentation-and-learning";
+import { fontsAndTypography } from "./fonts-and-typography";
 import { openSourceToolsAndUtilities } from "./open-source-tools-and-utilities";
 import { productivityAndUtilities } from "./productivity-and-utilities";
-import type { Tool } from "../types";
 
-export const data: Tool[] = [
-  ...fontsAndTypography,
-  ...designAndUI,
-  ...aiAndData,
-  ...documentationAndLearning,
-  ...audioAndVideo,
-  ...developmentLibrariesAndFrameworks,
-  ...openSourceToolsAndUtilities,
-  ...productivityAndUtilities,
-];
+const allTags = [
+  ...new Set([
+    ...fontsAndTypography.flatMap((tool) => tool.tags),
+    ...designAndUI.flatMap((tool) => tool.tags),
+    ...aiAndData.flatMap((tool) => tool.tags),
+    ...documentationAndLearning.flatMap((tool) => tool.tags),
+    ...audioAndVideo.flatMap((tool) => tool.tags),
+    ...developmentLibrariesAndFrameworks.flatMap((tool) => tool.tags),
+    ...openSourceToolsAndUtilities.flatMap((tool) => tool.tags),
+    ...productivityAndUtilities.flatMap((tool) => tool.tags),
+  ]),
+].sort();
 
-export default data;
+export { allTags };
