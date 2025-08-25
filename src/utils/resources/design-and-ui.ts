@@ -243,4 +243,11 @@ export const designAndUI: Resource[] = [
     link: 'https://resourceboy.com/',
     tags: ['design'],
   },
+  {
+    name: 'Paletton',
+    preview: '/previews/paletton.png',
+    description: 'A color scheme designer for web applications.',
+    link: 'https://paletton.com/',
+    tags: ['design', 'dev'],
+  },
 ];
