@@ -163,4 +163,11 @@ export const openSourceToolsAndUtilities: Resource[] = [
     link: 'https://toolfinder.co',
     tags: ['dev'],
   },
+  {
+    name: 'Crosspost',
+    preview: '/previews/crosspost.png',
+    link: 'https://github.com/humanwhocodes/crosspost/',
+    description: 'A tool for cross-posting content across platforms',
+    tags: ['open-source'],
+  },
 ];

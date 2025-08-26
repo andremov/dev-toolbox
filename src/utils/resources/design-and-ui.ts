@@ -250,4 +250,11 @@ export const designAndUI: Resource[] = [
     link: 'https://paletton.com/',
     tags: ['design', 'dev'],
   },
+  {
+    name: 'Thumb Craftwork',
+    preview: '/previews/thumb-craftwork.png',
+    link: 'https://thumb.craftwork.design/',
+    description: 'Tool to create nice thumbnails or images.',
+    tags: ['design'],
+  },
 ];
