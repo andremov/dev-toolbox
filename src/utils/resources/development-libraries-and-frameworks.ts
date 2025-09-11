@@ -276,4 +276,12 @@ export const developmentLibrariesAndFrameworks: Resource[] = [
     description: 'A collection of clean, modern UI building blocks.',
     tags: ['dev', 'design', 'open-source'],
   },
+  {
+    name: 'CSS Grid Builder',
+    preview: '/previews/css-grid-builder.png',
+    description:
+      'A tool for creating and customizing CSS Grid layouts, making it easy to design responsive web layouts with CSS Grid.',
+    link: 'https://andremov-grid-builder.vercel.app/',
+    tags: ['dev', 'design'],
+  },
 ];

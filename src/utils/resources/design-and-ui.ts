@@ -257,4 +257,11 @@ export const designAndUI: Resource[] = [
     description: 'Tool to create nice thumbnails or images.',
     tags: ['design'],
   },
+  {
+    name: 'Realtime Colors',
+    preview: '/previews/realtime-colors.png',
+    description: 'A tool for creating and visualizing color palettes in real-time.',
+    link: 'https://realtimecolors.com/',
+    tags: ['design', 'dev'],
+  },
 ];
