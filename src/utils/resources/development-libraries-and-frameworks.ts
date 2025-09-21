@@ -284,4 +284,32 @@ export const developmentLibrariesAndFrameworks: Resource[] = [
     link: 'https://andremov-grid-builder.vercel.app/',
     tags: ['dev', 'design'],
   },
+  {
+    name: 'React Bits',
+    preview: '/previews/reactbits.png',
+    description: 'A collection of React components.',
+    link: 'https://reactbits.dev/',
+    tags: ['dev'],
+  },
+  {
+    name: 'React Haiku',
+    preview: '/previews/reacthaiku.png',
+    description: 'A collection of React hooks and utilities.',
+    link: 'https://www.haikuforteams.com/',
+    tags: ['dev'],
+  },
+  {
+    name: 'React Wheel Picker',
+    preview: '/previews/react-wheel-picker.png',
+    description: 'A wheel picker component for React.',
+    link: 'https://react-wheel-picker.chanhdai.com/',
+    tags: ['dev'],
+  },
+  {
+    name: '21st Dev',
+    preview: '/previews/21stdev.png',
+    description: 'A collection of resources for modern web development.',
+    link: 'https://21st.dev/home',
+    tags: ['dev', 'open-source'],
+  },
 ];

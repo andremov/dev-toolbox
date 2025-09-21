@@ -15,4 +15,11 @@ export const fontsAndTypography: Resource[] = [
     link: 'https://fontshare.com',
     tags: ['font', 'typography', 'open-source'],
   },
+  {
+    name: 'BestFreeFonts',
+    preview: '/previews/bestfreefonts.png',
+    description: 'A collection of free fonts for personal and commercial use.',
+    link: 'https://bestfreefonts.com/',
+    tags: ['design', 'typography'],
+  },
 ];
