@@ -164,6 +164,13 @@ export const openSourceToolsAndUtilities: Resource[] = [
     tags: ['dev'],
   },
   {
+    name: 'Pushkeen',
+    preview: '/previews/pushkeen.png',
+    description: "The world's largest push notifications library.",
+    link: 'https://pushkeen.ai',
+    tags: ['dev', 'open-source'],
+  },
+  {
     name: 'Crosspost',
     preview: '/previews/crosspost.png',
     link: 'https://github.com/humanwhocodes/crosspost/',

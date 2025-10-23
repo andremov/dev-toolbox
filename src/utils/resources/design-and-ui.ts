@@ -135,7 +135,7 @@ export const designAndUI: Resource[] = [
     name: 'Colormind',
     description: 'A color scheme generator powered by AI.',
     preview: '/previews/colormind.png',
-    link: 'https://colormind.io/',
+    link: 'http://colormind.io/',
     tags: ['design', 'dev'],
   },
   {
@@ -333,5 +333,78 @@ export const designAndUI: Resource[] = [
     description: 'A collection of website sections for inspiration.',
     link: 'https://sections.wtf/',
     tags: ['dev', 'design'],
+  },
+  {
+    name: 'Doodle Ipsum',
+    preview: '/previews/doodle-ipsum.png',
+    description: 'A fun tool to generate random doodles for design inspiration or placeholders.',
+    link: 'https://doodleipsum.com',
+    tags: ['design'],
+  },
+  {
+    name: 'Spotted in Prod',
+    preview: '/previews/spotted-in-prod.png',
+    description:
+      'A curated collection of interesting and innovative web designs spotted in production, showcasing the latest trends and techniques in web development.',
+    link: 'https://spottedinprod.com',
+    tags: ['design', 'dev'],
+  },
+  {
+    name: 'Dark Design',
+    preview: '/previews/dark-design.png',
+    description:
+      'A curated collection of dark-themed web designs, showcasing the beauty and versatility of dark mode in web development.',
+    link: 'https://dark.design',
+    tags: ['design', 'dev'],
+  },
+  {
+    name: 'SVG Chart Generator',
+    preview: '/previews/svg-chart-generator.png',
+    description:
+      'A tool for generating SVG charts, allowing you to create customizable and visually appealing charts for your web applications.',
+    link: 'https://www.magicpattern.design/tools/svg-chart-generator',
+    tags: ['dev', 'design'],
+  },
+  {
+    name: 'Mesh Gradient Generator',
+    preview: '/previews/mesh-gradient-generator2.png',
+    description: 'A tool for generating beautiful mesh gradients for your designs.',
+    link: 'https://www.magicpattern.design/tools/mesh-gradients',
+    tags: ['dev', 'design'],
+  },
+  {
+    name: 'Polka Dot Pattern Generator',
+    preview: '/previews/polka-dot-pattern-generator.png',
+    description: 'A tool for generating customizable polka dot patterns for your designs.',
+    link: 'https://www.magicpattern.design/tools/polka-dot-pattern-generator',
+    tags: ['dev', 'design'],
+  },
+  {
+    name: 'Seamless Pattern Generator',
+    preview: '/previews/seamless-pattern-generator.png',
+    description: 'A tool for generating seamless patterns for your designs.',
+    link: 'https://www.magicpattern.design/tools/seamless-pattern-generator',
+    tags: ['dev', 'design'],
+  },
+  {
+    name: 'iOS Icon Gallery',
+    preview: '/previews/ios-icon-gallery.png',
+    description: 'A collection of iOS app icons for design inspiration and reference.',
+    link: 'https://iosicongallery.com',
+    tags: ['design', 'dev'],
+  },
+  {
+    name: 'Viewport UI',
+    preview: '/previews/viewport-ui.png',
+    description: 'UI curated experiences for you inspiration.',
+    link: 'https://viewport-ui.design/',
+    tags: ['design', 'dev'],
+  },
+  {
+    name: '404s Design',
+    preview: '/previews/404s-design.png',
+    description: 'A curated collection of creative and innovative 404 error page designs.',
+    link: 'https://404s.design',
+    tags: ['design', 'dev'],
   },
 ];

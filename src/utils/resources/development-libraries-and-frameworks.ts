@@ -312,4 +312,20 @@ export const developmentLibrariesAndFrameworks: Resource[] = [
     link: 'https://21st.dev/home',
     tags: ['dev', 'open-source'],
   },
+  {
+    name: 'ink',
+    link: 'https://github.com/vadimdemedes/ink',
+    tags: ['dev', 'open-source'],
+    preview: '/previews/ink.png',
+    description:
+      'A React-like library for building command-line interfaces using components and hooks.',
+  },
+  {
+    name: 'gumtree',
+    link: 'https://github.com/GumTreeDiff/gumtree',
+    tags: ['dev', 'open-source'],
+    preview: '/previews/gumtree.png',
+    description:
+      'A tool for performing syntax-aware diffing and merging of source code files, enabling developers to track changes and collaborate effectively.',
+  },
 ];
