@@ -328,4 +328,11 @@ export const developmentLibrariesAndFrameworks: Resource[] = [
     description:
       'A tool for performing syntax-aware diffing and merging of source code files, enabling developers to track changes and collaborate effectively.',
   },
+  {
+    name: 'Val Town',
+    link: 'https://val.town/',
+    tags: ['dev', 'open-source'],
+    preview: '/previews/val-town.png',
+    description: 'A platform to instantly deploy Typescript code.',
+  },
 ];
